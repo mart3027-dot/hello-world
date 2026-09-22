@@ -6,7 +6,12 @@
     <title>Hello World!</title>
 </head>
 <body>
-    <button>Hello World!</button>
+    <button command="show-modal" commandfor="new-dialog">Hello World!</button>
+
+    <dialog id="new-dialog">
+        <p>I can now show a new popup window!<br>This window isn't limited to just text. <br>It can also include a button to close.</p>
+        <button command="close" commandfor="new-dialog">Close</button>
+    </dialog>
     <text><br>Above is a <b>button.</b></text>
     <text style="color:red"><br>It currently doesn't do anything!</text>
 
